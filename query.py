@@ -62,7 +62,6 @@ def generate_answer_with_openai(question, n_results=5):
         articles += f"; {title}" if articles else f"Sources: {title}"
     prompt += "Based on the above articles, please answer the question."
 
-    # Ensure the prompt does not exceed the maximum token limit.
     max_tokens = 4096
     prompt = prompt[:max_tokens]
 
