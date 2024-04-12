@@ -3,9 +3,7 @@ import os
 from openai import OpenAI
 import argparse
 
-# os.environ["OPENAI_API_KEY"] =
-# Remove the space for it to work properly
-# "sk-xlgUxz0oGUsveanNJ           ypXT3BlbkFJJziO7Iu43JrCFpTjP3cq"
+# os.environ["OPENAI_API_KEY"] = Here you need to put your own API key
 
 
 def query_db(query_text, n_results=5):
